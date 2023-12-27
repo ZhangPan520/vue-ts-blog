@@ -1,0 +1,17 @@
+# 此配置文件是为了在不同操作系统或者不同的ide工具下，保持代码风格（默认情况下ide都会读取这个文件，vscode需要安装editorConfig for vs code插件）
+#相对于formatter的区别，在于，你按下键盘的时候就决定了风格，但是同时在没有配置formatter情况下，格式化将以这个文件为标准
+#https://blog.csdn.net/pukun888/article/details/119480088
+# https://editorconfig.org/
+root =true
+
+[*] #表示所有文件使用
+charset = utf-8 #设置文件字符集为utf-8
+indent_style = space #缩进风格(tab | space)
+indent_size = 2 #缩进大小
+end_of_ine=lf #控制换行类型(lf | cr|crlf)
+trim_trailing_whitespace = true #去除行首的任意空白字符
+insert_final_newline =  true #始终在文件末尾插入一个新行
+
+[*.md] #md文档生
+max_line_length =off
+trim_trailing_whitespace = false
