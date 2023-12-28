@@ -6,6 +6,8 @@
 
 ```
 npm install
+如果失败可以用
+npm install --legacy-peer-deps
 ```
 
 ### Compiles and hot-reloads for development
@@ -21,12 +23,6 @@ npm run serve
 ```
 node:v18.18.2
 npm:10.2.5
-```
-
-#### 安装依赖
-
-```
-npm install
 ```
 
 ### 启动项目

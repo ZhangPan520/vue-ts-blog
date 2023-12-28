@@ -10,4 +10,7 @@
     </el-row>
   </div>
 </template>
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+  const a = 33;
+  console.log(a);
+</script>
