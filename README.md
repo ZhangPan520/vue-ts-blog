@@ -50,3 +50,8 @@ npm run lint
 ### Customize configuration
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### eslint 与 prettierrc 冲突
+
+[利用插件解决冲突](https://juejin.cn/post/7012160233061482532)
+[处理换行符的冲突](https://blog.csdn.net/weixin_59250190/article/details/129251895)
