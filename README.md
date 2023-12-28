@@ -28,7 +28,7 @@ npm:10.2.5
 ### 启动项目
 
 ```
-npm run serve
+npm run dev
 ```
 
 ### 项目打包
