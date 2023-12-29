@@ -29,6 +29,11 @@ export default defineConfig({
     process: {
       env: {
         BASE_URL: '/',
+        axios: {
+          //axiox 默认配置
+          baseURL: 'http://httpbin.org/',
+          timeout: 5000,
+        },
       },
     },
   },
