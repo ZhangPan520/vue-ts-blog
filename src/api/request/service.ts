@@ -34,7 +34,7 @@ class Service {
     this.instance.interceptors.request.use(config.interceptors?.requestSuccess);
     this.instance.interceptors.response.use(config.interceptors?.responseSuccess, config.interceptors?.responseError);
   }
-  request<T = any>(config: HookAxiosRequestConfig) {
+  request<T = any>(config: HookAxiosRequestConfig<AxiosRequestConfig, T>) {
     if (config.interceptors?.requestSuccess) {
       // 对config的修改
       config = config.interceptors.requestSuccess(config);
@@ -43,6 +43,10 @@ class Service {
       this.instance
         .request<any, T>(config)
         .then((res) => {
+          if (config.interceptors?.responseSuccess) {
+            // 针对某个请求的数据处理
+            res = config.interceptors.responseSuccess(res);
+          }
           resolve(res);
         })
         .catch((error) => {
@@ -50,7 +54,7 @@ class Service {
         });
     });
   }
-  get<T = any>(config: AxiosRequestConfig) {
+  get<T = any>(config: HookAxiosRequestConfig<AxiosRequestConfig, T>) {
     this.request<T>({ ...config, method: 'get' });
   }
 }
