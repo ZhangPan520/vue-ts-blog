@@ -1,5 +1,5 @@
 <template>
-  <div>这是首页</div>
+  <div class="iconfont icon-tag">这是首页</div>
 </template>
 <script lang="ts" setup>
   import { onMounted } from 'vue';
