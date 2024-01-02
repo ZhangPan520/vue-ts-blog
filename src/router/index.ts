@@ -8,11 +8,12 @@ import type { RouteRecordRaw } from 'vue-router';
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    redirect: '/login',
+    name: 'index',
+    component: () => import('@/views/indev.vue'),
   },
   {
     path: '/login',
-    component: () => import('@/views/login/index.vue'),
+    component: () => import('@/views/login/login.vue'),
   },
 ];
 

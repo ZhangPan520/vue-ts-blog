@@ -1,10 +1,8 @@
 <template>
-  <router-view></router-view>
-  <login></login>
+  <defaultLayout>
+    <router-view></router-view>
+  </defaultLayout>
 </template>
 <script lang="ts" setup>
-  import { cmsRequest } from '@/api/index';
-  cmsRequest.get({
-    url: 'get',
-  });
+  import defaultLayout from './layout/defaultLayout.vue';
 </script>

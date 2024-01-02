@@ -31,7 +31,7 @@ export default defineConfig({
         BASE_URL: '/',
         axios: {
           //axiox 默认配置
-          baseURL: 'http://httpbin.org/',
+          baseURL: '/api',
           timeout: 5000,
         },
       },
@@ -45,5 +45,11 @@ export default defineConfig({
   },
   server: {
     port: 8080,
+    proxy: {
+      '/api': {
+        target: 'http://localhost:3000',
+        changeOrigin: true,
+      },
+    },
   },
 });

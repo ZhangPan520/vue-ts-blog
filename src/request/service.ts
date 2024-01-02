@@ -55,7 +55,7 @@ class Service {
     });
   }
   get<T = any>(config: HookAxiosRequestConfig<AxiosRequestConfig, T>) {
-    this.request<T>({ ...config, method: 'get' });
+    return this.request<T>({ ...config, method: 'get' });
   }
 }
 
