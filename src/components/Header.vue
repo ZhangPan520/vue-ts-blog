@@ -3,6 +3,5 @@
 <style scoped>
   .header {
     height: 100px;
-    background-color: red;
   }
 </style>

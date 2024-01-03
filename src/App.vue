@@ -6,3 +6,4 @@
 <script lang="ts" setup>
   import defaultLayout from './layout/defaultLayout.vue';
 </script>
+<style lang="scss"></style>

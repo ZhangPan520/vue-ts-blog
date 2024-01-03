@@ -1,22 +1,31 @@
 @font-face {
-  font-family: 'iconfont'; /* Project id 4396761 */
-  src: url('iconfont.woff2?t=1704213035794') format('woff2'),
-    url('iconfont.woff?t=1704213035794') format('woff'),
-    url('iconfont.ttf?t=1704213035794') format('truetype');
+  font-family: "iconfont"; /* Project id 4396761 */
+  src: url('iconfont.woff2?t=1704288849716') format('woff2'),
+       url('iconfont.woff?t=1704288849716') format('woff'),
+       url('iconfont.ttf?t=1704288849716') format('truetype');
 }
 
 .iconfont {
-  font-family: 'iconfont' !important;
+  font-family: "iconfont" !important;
   font-size: 16px;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-riqi:before {
+  content: "\e616";
+}
+
+.icon-view:before {
+  content: "\e6ad";
+}
+
 .icon-shijian:before {
-  content: '\e64d';
+  content: "\e64d";
 }
 
 .icon-tag:before {
-  content: '\e7f0';
+  content: "\e7f0";
 }
+

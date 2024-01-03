@@ -1,0 +1,16 @@
+.flex-x-between {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-y-center {
+  display: flex;
+  align-items: center;
+}
+
+.layout_container {
+  margin: auto;
+  width: 75%;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 30px;
+}

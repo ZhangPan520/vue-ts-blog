@@ -8,7 +8,7 @@ export const articleItemAnimate: Directive = {
     const { stop } = useIntersectionObserver(el, ([{ isIntersecting }]) => {
       // 进入可视区域
       if (isIntersecting) {
-        const duration = bindings.value.duration || 1.5;
+        const duration = bindings.value.duration || 1;
         let x = bindings.value.index || 0;
         if (x % 2 === 0) {
           x = -200;
