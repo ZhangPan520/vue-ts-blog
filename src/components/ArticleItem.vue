@@ -1,8 +1,12 @@
-<template><div class="footer">这是底部部</div></template>
+<template>
+  <div class="article_item"></div>
+</template>
 <script lang="ts" setup></script>
 <style scoped>
-  .footer {
-    height: 100px;
-    background-color: black;
+  .article_item {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    background-color: red;
   }
 </style>
